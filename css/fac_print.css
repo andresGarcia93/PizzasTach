@@ -1,0 +1,134 @@
+@page {margin: 2cm;}
+
+@page :first{
+	margin-top: 2cm;
+}
+@page :left{
+	margin-left: 2cm;
+	margin-right: 2cm;
+}
+@page :right{
+	margin-left: 2cm;
+	margin-right: 2cm;
+}
+@page {
+  page-size: carta;
+  size: portrait; 
+}
+
+@media print{
+
+
+header{display: none;}
+footer{display: none;}
+button {display: none;}
+nav{display: none;}
+body{background: #fff; color:#000;}
+#modal{display: none;}
+
+.container{
+	margin: 0;
+	font-size: 12pt;
+	width: 100%;
+	max-width: none;
+	float: none;	
+}
+
+.container2 {
+	display: block;	
+	text-align: center;	
+	width: 100%;
+	float: button;
+	margin-top:40%;
+}
+
+.container2 p{
+	float: button;
+	line-height: 0.3pt;	
+	font-size: 9pt;
+}
+
+.container h2 {
+	text-align: center;
+}
+
+.logo{
+	display: block;
+
+}
+
+.logo img{
+	width: 10%;
+	height: 10%;
+	
+}
+
+.logo span{
+	width: 20%;
+		
+}
+.fechas{	
+	float: right;
+	line-height: 0.3cm;	
+}
+.seriales{
+   float: left;
+   line-height: 0.3cm;
+}
+
+.encabezado{	
+	width: 100%;
+}
+
+.titulo_tabla{
+	text-align: left;
+}
+
+table{
+	margin-left: 2pt;
+	margin-top: 2pt;
+	width: 100%;
+}
+tbody tr td p{
+	text-align: center;
+	
+}
+
+
+.totales {
+    text-align: left;
+    list-style: none;
+    margin-top: 1.5em;
+    display: inline-block;
+    width: 40%;
+    margin-left: 49%;
+}
+
+.totales li {
+    padding-top: 5pt;    
+}
+
+.modos{	
+	float: left;
+	width: 100%;
+	
+}
+
+#der {      
+    width: 61%;
+    display: inline-block;
+}
+
+
+#iz {   
+    text-align: right;    
+    display: inline-block;
+}
+
+ul, img, table {
+	page-break-inside: avoid;
+}
+
+}
+
+

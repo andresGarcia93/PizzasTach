@@ -1,0 +1,158 @@
+
+.container {
+	background-color: rgba(0,0,0,.3); /*color de fondo*/
+	display: block;	
+	padding: 10px;
+	text-align: center;
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 90%;
+	
+}
+
+.container h2 {
+	display: inline-block;
+	width: 100%;
+	font-size: 30px;
+}
+
+.logo{
+	display: none;
+}
+.container2{
+	display: none;
+}
+
+
+.container .linea_glo{
+	margin-left: 5%;
+	margin-top: 1em;
+}
+
+.container #bt_limpiar {
+	margin-left: 100px;
+	float: left;
+}
+
+.fechas{
+	text-align: right;	
+	margin-left:70%;
+	position: absolute;
+}
+.titulo_tabla{
+	text-align: left;
+}
+
+table{
+	margin-left: 5%;
+	margin-top: 2em;
+	width: 90%;
+}
+
+table thead{
+	border-bottom: azure 1px solid ;	
+}
+
+table th{
+	padding:20px;
+}
+
+table td{
+	padding-top: 10px;
+}
+
+.totales {
+    text-align: left;
+    list-style: none;
+    margin-top: 1.5em;
+    display: inline-block;
+    width: 40%;
+    margin-left: 48%;
+}
+
+.totales li {
+    padding-top: 10px;    
+}
+
+.modos{	
+	text-align: left;
+	margin-left: 10%;
+}
+
+#der {      
+    width: 61%;
+    display: inline-block;
+}
+
+
+#iz {   
+    text-align: right;    
+    display: inline-block;
+}
+
+
+
+.modal h3{
+	text-align: center;
+	padding-top: 1em;
+	margin-bottom: 10px;
+	font-size: 30px;
+}
+
+.modal .texto{
+	padding: 4%;
+	font-size: 20px;
+	margin: 0 0 5px 5px;
+	text-align: left;
+
+}
+
+
+.modal .aceptar {
+  border: 0;
+  outline: none;
+  border-radius: 0.5rem;
+  padding: 5px 0;
+  font-size: 1.3rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: .1em;  
+  color: #111129;  
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;  
+}
+
+
+.modal .aceptar-block {
+  
+  width: 200px;
+  margin-top: 2rem;
+  margin-left: 150px;
+}
+
+/*-----------------------------------------------Responsive-------------------------------------------*/
+
+@media screen and (max-width:900px) {
+
+	 
+}
+
+
+
+@media screen and (max-width:768px) {
+
+	 
+}
+
+@media screen and (max-width:640px) {
+
+	 
+
+}
+
+@media screen and (max-width:400px) {
+
+	 
+
+}

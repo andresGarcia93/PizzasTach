@@ -1,0 +1,253 @@
+
+.container {
+	background-color: rgb(47, 38, 48); /*color de fondo*/
+	display: block;	
+	padding: 10px;
+	text-align: center;
+	margin-left: 5%;
+	margin-right: 5%;
+	
+}
+
+.container h2 {
+	display: inline-block;
+	width: 100%;
+	font-size: 30px;
+}
+
+.container h3 {	
+	margin-top: 10px;
+	display: inline-block;
+	text-align: left;
+	width: 98%;	
+}
+
+.container #f1, #f2, #f3, #f4, #d1, #d2, #d3, #d4 {
+	display: inline-block;
+	text-align: left;
+	width: 49%;
+
+}
+
+#dir{
+	display:block;
+	float: left;
+	text-align: left;
+}
+#dir1{
+	display: inline-block;
+	float: left;
+	text-align: left;
+	width: 20px;
+	margin-right: 5px;
+	color: white;
+}
+fieldset{
+	display: inline-block;
+	margin-right: 5%;
+	background-color:rgba(166, 165, 167, 0.23);
+}
+
+.direccion {	
+	text-align: center;
+	width: 90%;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding-left: 9%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	
+}
+
+.personales{
+	width: 90%;
+	margin-left: 19px;
+	text-align: center;
+	margin-left: 9%;
+	
+}
+
+.container label {  
+  //color: rgba(255, 255, 255, 0.8); /*color de fuente de los label*/
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: 16px;
+}
+.container label .req {
+  margin: 2px;
+  margin-right: 1em;
+  //color: #fed75f; /*color del arterisco*/
+}
+
+.container label.active {
+  left: 2px;
+  font-size: 14px;
+}
+.container label.active .req {
+  opacity: 0;
+}
+
+.container label.highlight {
+  color: #000;
+}
+
+.container option{
+	background-color: rgb(47, 38, 48);
+}
+
+
+.container input, .container select {
+  
+  background-color: rgba(227,228,232,100);
+  font-size: 18px; 
+  z-index: 999;
+  margin: 3% auto;
+  width: 70%;  
+  padding: 5px 0px;
+  background: none;
+  background-image: none;
+  border: 2px solid #a0b3b0;
+  color: #f5ebd2;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+  border-radius: 10px 10px 10px 10px;
+}
+.container input:focus {
+  outline: 0;
+  //border-color: #fed75f; /*color del borde de input seleccionado*/
+}
+
+
+
+.container #bt_limpiar {
+	margin-left: 100px;
+	float: left;
+}
+
+.container #bt_guardar {
+	float: right;
+	margin-right: 180px;
+	
+}
+
+.derecho{
+	display: inline-block;
+	width: 35%;
+}
+.izquierdo{
+	display: inline-block;
+	width: 60%;
+}
+
+
+/*-----------------------------------------------Responsive-------------------------------------------*/
+
+@media screen and (max-width:1025px) {
+
+	 .container label{
+	 	font-size: 90%;
+	 }
+	 .derecho {
+       width: 38%;
+      }
+     .container #bt_guardar {
+       margin-right: 10%;
+     }
+     .direccion {
+     	padding-left: 8%;
+     }
+
+}
+
+
+
+@media screen and (max-width:769px) {
+
+	 .container label{
+	 	font-size: 70%;
+	 }
+
+	 .container #f1, #f2, #f3, #f4, #d1, #d2, #d3, #d4 {
+	 	width: 49%;
+	}
+
+	.derecho {
+    width: 51%;
+    font-size: large;
+    margin-right: 0.6em;
+    
+    }
+
+	.container input, .container select {
+	    width: 98%;
+	}
+	.container #bt_limpiar {
+     margin-left: 11%; 
+    }
+
+}
+
+@media screen and (max-width:601px) {
+
+	 .container{
+	 	display: block;
+	 	padding: 5px;
+	 }
+
+	 .container #f1, #f2, #f3, #f4, #d1, #d2, #d3, #d4 {
+		display: block;
+		text-align: left;
+    	width: 120%;
+
+	}
+
+	.container label{
+	 	font-size: 90%;
+	 }
+
+	fieldset {
+    margin-right: 8%;
+    }
+
+}
+
+@media screen and (max-width:481px) {
+
+	 .container #f1, #f2, #f3, #f4, #d1, #d2, #d3, #d4 {
+		display: block;
+		text-align: left;
+    	width: 160%;
+
+	}
+	fieldset {
+    margin-right: 0; 
+    width: 86%;
+    padding: 1em;
+    }
+
+	.derecho{
+		margin-top: 1em;
+		display:block;
+		width: 80%;
+	}
+	.izquierdo{
+		display: block;
+		width: 80%;
+	}
+
+	.container input, .container select {
+	    width: 70%;
+	}	
+	.container #bt_limpiar {
+     font-size: 1.3em; 
+    }
+
+    .container #bt_guardar {
+     font-size: 1.3em;
+    } 
+
+
+}

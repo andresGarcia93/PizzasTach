@@ -1,0 +1,192 @@
+
+.container {
+	background-color: rgba(0,0,0,.3); /*color de fondo*/
+	display: block;	
+	padding: 10px;
+	text-align: center;
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 90%;
+	
+}
+
+.form_fechas {
+	background-color: rgba(0,0,0,.3); /*color de fondo*/
+	display: block;	
+	padding: 10px;
+	text-align: center;
+	margin-left: 35%;
+    margin-right: 5%;
+    margin-top: -18%;
+    width: 30%;
+    height: 50%;
+	
+}
+
+.container h2 {
+	display: inline-block;
+	width: 100%;
+	font-size: 30px;
+}
+
+.form_fechas label {    
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: 16px;
+}
+.form_fechas label .req {
+  margin: 2px;
+  margin-right: 1em;  
+}
+
+.form_fechas label.active {
+  left: 2px;
+  font-size: 14px;
+}
+.form_fechas label.active .req {
+  opacity: 0;
+}
+
+.form_fechas label.highlight {
+  color: #000;
+}
+
+.form_fechas input{
+	background-color: rgba(227,228,232,100);
+  font-size: 18px; 
+  margin: 3% auto;
+  width: 60%;
+  height: 100%;
+  padding: 5px 5px;
+  background: none;
+  background-image: none; 
+  color: #f5ebd2;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+  border-radius: 10px 10px 10px 10px;
+}
+.form_fechas input:focus {
+  outline: 0;  
+}
+
+.logo{
+	display: none;
+}
+.container2{
+	display: none;
+}
+
+
+.container .linea_glo{
+	margin-left: 5%;
+	margin-top: 1em;
+}
+
+.container #bt_limpiar {
+	margin-left: 100px;
+	float: left;
+}
+
+.fechas{
+	text-align: right;	
+	margin-left:70%;
+	position: absolute;
+}
+.titulo_tabla{
+	text-align: left;
+}
+
+table{
+	margin-left: 5%;
+	margin-top: 2em;
+	width: 90%;
+
+}
+
+
+table th{
+	padding:27px;
+	font-size: smaller;	
+}
+
+table td{
+	padding-top: 10px;
+	font-size: small;
+}
+
+.totales {
+    text-align: left;
+    list-style: none;
+    margin-top: 1.5em;
+    display: inline-block;
+    width: 25%;
+    margin-left: 64%;
+}
+
+.totales li {
+    padding-top: 10px;    
+}
+
+.modos{	
+	text-align: left;
+	margin-left: 10%;
+}
+
+#der {      
+    width: 52%;
+    display: inline-block;
+}
+
+
+#iz {   
+    text-align: right;    
+    display: inline-block;
+}
+
+
+
+.modal h3{
+	text-align: center;
+	padding-top: 1em;
+	margin-bottom: 10px;
+	font-size: 30px;
+}
+
+.modal .texto{
+	padding: 4%;
+	font-size: 20px;
+	margin: 0 0 5px 5px;
+	text-align: left;
+
+}
+
+
+
+/*-----------------------------------------------Responsive-------------------------------------------*/
+
+@media screen and (max-width:900px) {
+
+	 
+}
+
+
+
+@media screen and (max-width:768px) {
+
+	 
+}
+
+@media screen and (max-width:640px) {
+
+	 
+
+}
+
+@media screen and (max-width:400px) {
+
+	 
+
+}

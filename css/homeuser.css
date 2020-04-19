@@ -1,0 +1,182 @@
+
+
+
+.asides {
+	display: flex;
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+
+}
+.aside2 {		
+	display: inline-block;
+	justify-content: space-between;
+	width: 49%;	
+	text-decoration: none;
+}
+
+.aside2 h2{
+	font-size: 40px;
+	font-stretch: expanded;
+}
+
+.top_pedidos{ 
+	width: 65%;
+	margin-top: 10px;    
+	list-style: none;
+	overflow: auto;
+	display: inline-block;
+		
+	border-radius: 8%;
+}
+
+.top_pedidos #precio{
+	color: #111129 !important;
+	text-transform:capitalize;
+	font-size: large;
+}
+
+.top_pedidos .icon-ok-1{
+	color: #111129 !important;
+	font-size: 120%;
+	margin-left: 12px;
+	
+}
+
+.green {
+  background-color: #82BF56;
+  box-shadow: 0px 5px 0px 0px #669e3d;
+}
+
+.green:hover {
+  background-color: #569c24;
+  text-shadow: 0px -2px #478c17;
+}
+
+
+
+.aside2 li {
+	height: 5em;
+	color: #aaa;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 2px;
+	border-bottom: 2px solid;
+	display: flex;
+    background-color: #e3e4e8;
+}
+
+.aside2 li:hover{
+    background-color: rgba(227,228,232,0.7);
+}
+
+.top_pedidos .izquierda {
+	width: 36%;
+	padding: 4%;	
+	margin-left: 0% !important;
+	text-align: center;
+	display: inline-block;
+	color: #000;
+}
+
+.top_pedidos .derecha {
+	text-align: center;
+	padding: 4% !important;
+	width: 40%;
+    margin-left: 0% !important;
+    display: inline-block;
+    color: #000;
+    
+}
+
+.aside2 li img {
+	width: 4em;
+	height: 4em;
+	margin-left: 1em;
+}
+
+
+
+/*---------------------------------------------- Resposive ---------------------------------------------------*/
+
+@media screen and (max-width:1025px) {
+
+	.top_pedidos .derecha {
+    width: 45%;
+    }
+
+    .top_pedidos .izquierda {
+    width: 60%;
+    }
+
+    .top_pedidos .icon-mas-3 {
+    margin-left: 5px;
+    font-size: 100%;
+    }
+
+    .aside2 h2 {
+    font-size: 180%;
+   }
+
+   
+
+}
+
+@media screen and (max-width:769px) {
+
+    
+	.aside2 {
+    margin-right: 0.9em !important;
+    }
+    .aside2 {
+    width: 44% !important; 
+    }
+
+    .top_pedidos #precio {
+    font-size: 85%;
+    }
+}
+
+
+
+@media screen and (max-width:601px) {
+	
+	
+
+    .submenu-user {
+       right: 4%;
+       top:10%;
+    }
+
+    .submenu-user a {
+    font-size: x-small;
+    }
+    .submenu-user li {
+    padding: 0.5em 0.5em;
+    }
+
+    .calloutUp {
+    left: -55% !important;
+    }   
+	.carrusel>div {
+	      width: 8%;
+	  }
+	.product span {
+	    font-size: 0.5em;
+	  }
+
+
+  }
+
+
+@media screen and (max-width:481px) {
+	
+    .submenu-user {
+       top: 9%
+    }
+    .calloutUp {
+    left: -22% !important;
+    }
+
+    
+}

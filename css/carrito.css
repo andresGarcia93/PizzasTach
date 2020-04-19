@@ -1,0 +1,349 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+.container{
+	margin-right: 10%;
+	margin-left: 10%;
+	background-color: rgba(0,0,0,.3);
+	min-height: 67vh;
+	padding-top: 3%;
+	margin-top: 20px;
+	margin-bottom:10px;
+}
+
+.container h2 {
+	text-align: center;
+	font-size: 30px;
+}
+
+#carro{
+	background-color: rgba(227,228,232,100);
+	display: inline-block;
+	border: 5px solid;
+	border-radius: 10px 10px 10px 10px;
+	border-color: gray;
+	margin-top: 6%;
+	margin-right: 60px;
+	margin-left: 20px;
+}
+#carro strong,span,h3{
+	color:rgba(17,17,41,100);
+}
+
+#izquierda{
+	display: inline-block;
+	margin: 0px 0px 0px 20px;	
+}
+#izquierda span{
+	display: block;
+}
+
+#derecha{
+	display: inline-block;
+	margin: 0px 0px 0px 60px;
+	float: right;
+}
+#derecha span{
+	display: block;
+	padding-bottom: 20px;
+}
+.btnEliminar {
+    display: block;
+    border-radius: 5px;
+    padding: 0px 5px;
+    font-weight: bold;
+    font-family: 'Open Sans', 'sans-serif';
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #822225;        
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+
+.btnEliminar:hover{
+	background-color: #ba3d41;	
+}
+
+#carro select{
+	width: 7em;
+}
+#carro input{
+	width: 3em;	
+}
+
+#carro li{
+	list-style: none;
+	border: 2px solid;
+	border-color: color:rgba(59,39,46,100);	
+	padding-right: 10px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
+
+#carro li img{
+	display: inline-block;
+	width: 55px;
+	height: 55px;
+	margin: 5px 0px 0px 5px;
+	border: 2px solid;
+	border-radius: 5px 5px 5px 5px;
+	border-color: color:rgba(59,39,46,100);
+}
+
+#subtotal{
+	display: inline-block;
+	margin-left: 10px;
+	float: right;
+	margin-top: 6%;
+	margin-right: 50px;
+}
+#subtotal h3{
+	display: inline-block;
+	color: #f5ebd2;
+}
+#subtotal #precio{
+	display: inline-block;
+	float: right;
+}
+
+#subtotal span{
+	color: #f5ebd2;
+}
+
+form{
+	display: block;
+	padding-top: 30px;	
+}
+#caja_boton{
+	display: block;
+	padding-top: 50px;
+}
+
+#clr{
+	margin-left: 40px;
+}
+
+.btn {
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;  
+  display: inline-block;
+  font-weight: bold;
+  font-family: 'Open Sans', 'sans-serif';
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+.btn:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+
+.green {
+  background-color: #82BF56;
+  box-shadow: 0px 5px 0px 0px #669e3d;
+}
+
+.green:hover {
+  background-color: #569c24;
+  text-shadow: 0px -2px #478c17;
+}
+
+.red
+{
+	background-color: #E74C3C;
+	border-bottom: 5px solid #BD3E31;
+	
+}
+
+.red:hover{
+	background-color: #de321f;	
+	text-shadow: 0px -2px #BD3E31;
+}
+
+.container2{
+	margin-top: 1em;
+}
+.container2 label {    
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: 16px;
+}
+.container2 label .req {
+  margin: 2px;
+  margin-right: 1em;  
+}
+
+.container2 label.active {
+  left: 2px;
+  font-size: 14px;
+}
+.container2 label.active .req {
+  opacity: 0;
+}
+
+.container2 label.highlight {
+  color: #000;
+}
+
+.container2 input, .container select {
+  font-size: 18px; 
+  margin: 3% auto;  
+  padding: 5px 5px;
+  background: none;
+  background-image: none; 
+  color: #fff;
+  background-color: rgba(67,54,69,0.3);
+  background-image: none;
+  appearance: none;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+  border-radius: 10px 10px 10px 10px;
+}
+
+
+.derecho{
+	display: inline-block;
+	width: 44%;
+}
+.izquierdo{
+	display: inline-block;
+	width: 50%;
+}
+
+.caja_direcciones{
+   width: 100%;
+}
+
+.caja_dir{
+	padding-right: 0.3em;
+}
+
+
+@media screen and (max-width:1025px) {
+
+	.container {
+    margin-right: 2%;
+    margin-left: 3%;
+   }
+	#carro{
+    	margin-top: 0;
+    	margin-left: 1em;
+    	margin-top: 5%;
+    }
+
+    #izquierda {
+    margin: 0px 0px 0px 6px;
+    }
+
+    #carro li img {
+    width: 44px;
+    height: 44px;
+    }
+
+    #carro select, #carro input {
+    font-size: 0.7em;
+   }
+   #izquierda span {
+    font-size: 70%;
+    width: 90%;
+   }
+
+   #derecha {
+    margin: 0px 0px 0px -23px;
+   }
+
+    .btnEliminar {
+    padding: 0px 6px;
+    cursor: pointer;
+    margin-bottom: 5px;
+   }
+
+   .caja_dir {
+    padding-right: 12.3em;
+   }
+   #subtotal {
+    margin-left: 10px;
+    margin-right: 20px;
+   }
+}
+
+
+@media screen and (max-width:768px) {
+
+	#carro strong, span, h3 {
+    font-size: smaller;
+    }
+
+    #izquierda span {
+    font-size: 70%;
+    width: 60%;
+	}
+
+	#derecha {
+    margin: 0px 0px 0px -69px;
+    }
+
+    #subtotal #precio {
+    float: none;
+    margin-left: 30%;
+    }
+
+    #subtotal {
+    margin-right: -98px;
+    /* font-size: 65%; */
+    }
+    .container2 {
+    width: 1em;
+    }
+    .derecho {
+    width: 120%;
+    }
+
+    .btn {
+    font-size: 17px;
+    }
+}
+
+@media screen and (max-width:601px) {
+	#carro {
+    margin-left: 6em;
+   }
+
+   #subtotal {
+    margin-right: 100px;
+    font-size: medium;
+   }
+   #clr{display: none;}
+
+   .btn , #mas{
+    margin: 20px;
+    margin-top: 0%;
+    }
+    #mas{
+    	margin-left: 21%;
+    }
+}
+
+@media screen and (max-width:481px) {
+
+    #carro {
+    margin-right: 20px;
+    margin-left: 9%;
+    }
+    #subtotal {
+    margin-right: 40px;
+    }
+
+    #mas {
+    margin-left: 14%;
+    }
+}

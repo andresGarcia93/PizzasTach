@@ -1,0 +1,493 @@
+
+.container{
+	margin-left: 7%;
+	background-color: rgba(0,0,0,.3);
+	min-height: 67vh;
+	padding-top: 3%;	
+	margin-bottom:10px;
+}
+
+.container h2 {
+	text-align: center;
+	font-size: 30px;
+}
+
+#carro{
+	background-color: rgba(227,228,232,100);
+	display: inline-block;
+	border: 5px solid;
+	border-radius: 10px 10px 10px 10px;
+	border-color: gray;
+	margin-top: 3%;
+	margin-right: 60px;
+	margin-left: 20px;
+	overflow-y: scroll;
+	height: 390px;
+}
+#carro strong,span,h3{
+	color:rgba(17,17,41,100);
+}
+
+
+
+.container select {
+  font-size: 18px;  
+  background: none;
+  background-image: none; 
+  color: #fff;
+  background-color: rgba(67,54,69,0.3);
+  background-image: none;
+  appearance: none;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+  border-radius: 10px 10px 10px 10px;
+}
+
+#carro2{
+	background-color: rgba(227,228,232,100);
+	display: inline-block;
+	border: 5px solid;
+	border-radius: 10px 10px 10px 10px;
+	border-color: gray;
+	margin-top: 3%;
+	margin-right: 60px;
+	margin-left: 20px;
+
+}
+#carro2 strong,span,h3{
+	color:rgba(17,17,41,100);
+}
+
+#izquierda{
+	display: inline-block;
+	margin: 0px 0px 0px 20px;
+}
+#izquierda span{
+	display: block;
+}
+
+#derecha{
+	display: inline-block;
+	margin: 0px 0px 0px 14px;
+}
+#derecha span{
+	display: block;
+	padding-bottom: 20px;
+}
+.btnEliminar {
+    display: block;
+    border-radius: 5px;
+    padding: 0px 5px;
+    font-weight: bold;
+    font-family: 'Open Sans', 'sans-serif';
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #822225;        
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+
+.btnEliminar:hover{
+	background-color: #ba3d41;	
+}
+
+#carro select, #carro2 select{
+	width: 7em;
+}
+#carro input, #carro2 input{
+	width: 3em;	
+}
+
+#carro li, #carro2 li{
+	list-style: none;
+	border: 2px solid;
+	border-color: color:rgba(59,39,46,100);	
+	padding-right: 10px;
+	padding-left: 5px;
+}
+
+#carro li img, #carro2 li img{
+	display: inline-block;
+	width: 55px;
+	height: 55px;
+	margin: 5px 0px 0px 5px;
+	border: 2px solid;
+	border-radius: 5px 5px 5px 5px;
+	border-color: color:rgba(59,39,46,100);
+}
+
+
+#otra_tabla{
+	display: inline-block;
+	margin-left: -32px;
+	float: right;
+	margin-top: 6%;
+	margin-right: -30px;
+}
+
+
+
+#subtotal{
+	display: inline-block;
+	float: right;
+	margin-top: 2.5%;
+	
+}
+
+.TituloMenu{
+	text-align: center;
+	width: 60%;
+}
+.TituloBebidas{
+	text-align: center;
+	width: 90%;
+}
+
+.buscador{
+	text-align: center;
+	position: absolute;
+	top: 35%;
+	left: 57%;
+}
+
+
+.btn2 {
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px 30px;
+  color: #fff;
+  float: right;  
+  display: inline-block;
+  font-weight: bold;
+  font-family: 'Open Sans', 'sans-serif';
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+.btn2:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+
+.green {
+  background-color: #82BF56;
+  box-shadow: 0px 5px 0px 0px #669e3d;
+}
+
+.green:hover {
+  background-color: #569c24;
+  text-shadow: 0px -2px #478c17;
+}
+
+/*----------------------------Buscador----------------------------*/
+
+
+.flexsearch--wrapper {
+	height: auto;
+	width: auto;
+	max-width: 100%;
+	overflow: hidden;
+	background: transparent;
+	margin: 0;
+	position: static;
+}
+	
+.flexsearch--form {
+	overflow: hidden;
+	position: relative;
+}
+	
+.flexsearch--input-wrapper {
+	padding: 0 66px 0 0; /* Right padding for submit button width */
+	overflow: hidden;
+}
+
+.flexsearch--input {
+  width: 100%;
+}
+
+/***********************
+ * Configurable Styles *
+ ***********************/
+.flexsearch {
+  padding: 0 25px 0 100px; /* Padding for other horizontal elements */
+}
+
+.flexsearch--input {
+  -webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+ 	height: 60px;
+    padding: 0 46px 0 0px;
+	border-color: #888;
+    border-radius: 35px; /* (height/2) + border-width */
+    border-style: solid;
+	border-width: 5px;
+    margin-top: 0px;
+    padding-left: 4%;
+    color: #333;	
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+	
+.flexsearch--submit {
+  position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	width: 60px;
+	height: 60px;
+    padding: 0;
+    border: none;
+    margin-top: 5px; /* margin-top + border-width */
+    margin-right: 5px; /* border-width */
+    background: transparent;
+    color: #888;  
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.flexsearch--input:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.flexsearch--input:focus.flexsearch--submit {
+ 	color: #333; 
+}
+
+.flexsearch--submit:hover {
+  color: #333;
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+	color: #888;  
+}
+
+input:-moz-placeholder {
+  color: #888
+}
+.h3 {
+  float: left;
+  margin: 15px;
+  color: #fff;    
+  font-weight: bold;
+  line-height: 45px;
+  text-align: center;
+}
+
+
+
+@media screen and (max-width:1025px) {
+
+	.container {
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+	
+	.h3 {
+    line-height: 20px;
+    font-size: medium;
+    }
+
+    .flexsearch--input {
+    height: 40px;
+    }
+
+    .flexsearch--submit {
+    	height: 40px;
+    	margin-top: -5px;
+    }
+
+
+    #carro {
+    	margin-top: 7%;
+    }
+
+    #carro li img {
+    width: 44px;
+    height: 44px;
+    }
+
+    #carro select, #carro input {
+    font-size: 0.7em;
+   }
+   #izquierda span {
+    font-size: 70%;
+    width: 90%;
+   }
+
+    .btnEliminar {
+    padding: 0px 6px;
+    cursor: pointer;
+    margin-bottom: 5px;
+   }
+
+   .flexsearch {
+    padding: 0 25px 0 50px;
+   }
+
+}
+
+
+@media screen and (max-width:768px) {
+
+	.TituloMenu {
+    text-align: center;
+    width: 100%;
+    }
+
+    #carro {
+    margin-top: 7%;
+    margin-left: 15%;
+    margin-top: 4em;
+	}
+
+	#otra_tabla {
+    display: inline-block;
+    margin-left: -32px;
+    float: none;
+    margin-top: 0%;
+    margin-right: 0px;
+    }
+
+    .TituloBebidas {
+    width: 75%;
+    }
+
+    #carro2 {
+    margin-top: 0%;
+    margin-right: 184px;
+    margin-left: 20px;
+    margin-bottom: 10%;
+	}
+
+	.btn2 {
+    margin-top: -4%;
+    }
+
+
+}	
+
+@media screen and (max-width:601px) {
+	#carro {
+    margin-top: 7%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 5em;
+    }
+
+    .buscador {
+    left: 43%;
+    }
+
+    #carro2 {
+    margin-right: 95px;
+    }
+    .TituloBebidas {
+    width: 85%;
+    }
+
+}
+
+@media screen and (max-width:481px) {
+	#izquierda span {
+    font-size: 57%;
+    width: 90%;
+    }
+
+    #carro {
+    margin-top: 7%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 4em;
+    }
+
+    #izquierda {
+    display: inline-block;
+    margin: 0px 0px 0px 4px;
+    }
+
+    .buscador {
+    top: 29%;
+    left: 32%;
+    }
+
+    .h3 {
+    font-size: small;
+    line-height: 7px;
+    
+    }
+
+    .flexsearch--input {
+    font-size: x-small;
+    height: 26px;
+    }
+
+    .flexsearch--submit {
+    margin-top: -12px;
+    }
+
+    #carro2 {
+    margin-right: 55px;
+    }
+
+    .TituloBebidas {
+    width: 94%;
+    }
+
+}
+
+.icon-carrito:hover {
+  animation: crecer .7s ease 1
+}
+
+.sacudir {
+  animation: sacudir .7s ease 1;
+}
+
+.crecer {
+  animation: crecer .7s ease 1;
+}
+
+ul li:hover{
+}
+
+@keyframes crecer {
+   0% {
+     transform: scale(1.1, 1.1);   
+   }
+   25% {
+     transform: scale(1.2, 1.2);
+   }
+   50% {
+     transform: scale(1.3, 1.3);
+   }
+   100% {
+     transform: scale(1.2, 1.2);
+   }
+   
+}
+
+@keyframes sacudir {
+   0% {
+     transform: rotate(10deg);   
+   }
+   25% {
+     transform: rotate(0deg);   
+   }
+   50% {
+     transform: rotate(-10deg);   
+   }
+   100% {
+     transform: rotate(0deg);   
+   }
+   
+}
