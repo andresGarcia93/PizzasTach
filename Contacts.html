@@ -1,0 +1,114 @@
+<!DOCTYPE Html>
+<html lang="es">
+	<head>
+		<title>
+			Pizzas Tach - Contáctanos
+		</title>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">	    
+		<link rel="stylesheet" type="text/css" href="css/Global.css">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="css/fontello.css" media="all">
+		<link rel="stylesheet" type="text/css" href="css/contacts.css">
+
+		<script src="js/ism-2.2.min.js"></script>
+	    <script src="js/jquery.js"></script>
+	    <script src="js/script.js"></script>
+	    <script type="text/javascript">
+	    	var visible = true;
+	    </script>
+	</head>
+	<body>
+		<header>
+			<figure class="Logo">
+				<a href="Index.html">
+					<img alt="Logo" src="Images/Logo.png">
+				</a>
+			</figure>
+			
+			<a href="#openModal" class="Login icon-perfil-1"></a>
+
+
+			<div id="openModal" class="modalDialog">
+				<div>
+					<a href="#close" title="Close" class="close icon-cerrar"></a>
+						   
+					          
+			          <form action="HomeUsuario.html" method="post" class="modal">
+			            <div>
+				            <label>
+				              Correo<span class="req">*</span>
+				            </label>
+				            <input type="email" required autocomplete="off"/>
+			            </div>
+			            <div>
+				            <label>
+				              Contraseña<span class="req">*</span>
+				            </label>
+				            <input type="password" required autocomplete="off"/>
+			            </div>
+				        
+				        <a class="olvido" href="#">¿Has Olvidado la Contraseña?</a>
+				        
+				        <a class="registrar" href="registro.html#firstName">¿Eres Nuevo? Registrate</a>
+				        <button class="button button-block" href="HomeUsuario.html">Iniciar Sesión</button>
+			            
+			          </form>
+				</div>
+    		</div>
+
+		</header>
+		<main>
+			<nav class="Menu">
+				<a class="btn orange" href="menu.html">Menu</a>
+				<a class="btn orange" href="Mispedidos.html">Mis Pedidos</a>
+				<a class="btn orange" href="Contacts.html">Contactanos</a>
+			</nav>
+			<div class="btn orange icon-menu" href="#"></div>
+			
+			<ul class="MenuPequenio" id="MenuPequenio" hidden="true" >
+				<div class="calloutUp"></div>
+				<li ><a href="menu.html" class="icon-perfil">Menú</a></li>
+				<li ><a href="Mispedidos.html" class="icon-lista-1">Mis Pedidos</a></li>
+				<li ><a href="Contacts.html" class="icon-carrito">Contáctanos</a></li>
+			</ul>
+
+			<section class="container">
+				<h2>Contáctanos</h2>
+
+				<ul class="listado">
+					
+					<li id="lt1">
+						<h3 class="icon-email">Dirección de Correo Electrónico:</h3>
+						<p>PizzasTach@gmail.com</p>
+					</li>
+					<li id="lt2">
+						<h3 class="icon-telefono">Atención al Cliente</h3>
+						<p><strong>Cel:</strong> 0426-9765228<span class="icon-whatsapp"></span></p>
+						
+					</li>
+					<li id="lt3">
+						<h3 class="icon-calendario">Horario de Atención:</h3>
+						<p> <strong>Lunes a Viernes</strong> </p><p> 5:00pm - 2:00am</p>
+						<p> <strong>Sábado</strong> </p><p> 6:00pm - 12:00am</p>
+					</li>
+					<li id="lt4">
+						<h3 class="icon-location"> Dirección:</h3>
+						<p>Avenida Universidad, Sector Paramillo, Táchira. San Cristóbal 5001, Venezuela</p>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15811.727359553894!2d-72.21861275301572!3d7.797041420195791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e666c579d18fb45%3A0x2bb6762c201eab42!2sUniversidad+Nacional+Experimental+del+T%C3%A1chira!5e0!3m2!1ses-419!2sve!4v1480283379254" allowfullscreen></iframe>
+					</li>				
+				</ul>
+			</section>				
+		</main>
+		<footer>
+			<p class="Copyright">Todos los derechos reservados</p>
+			
+			<div class="Follow">
+				<p>Siguenos en: </p>
+				<a href="https://www.facebook.com/"><img class="zoom peque" alt="Facebook" src="Images/facebook.png"></a>
+				<a href="https://www.twitter.com"><img class="zoom peque"  alt="Twitter" src="Images/twitter.png"></a>
+				<a href="https://www.instagram.com/?hl=es"><img class="zoom peque"  alt="Instagram" src="Images/instagram.png"></a>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Pizzas Tach - Menú</title>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script>
+	<![endif]-->
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" name="Aquí encontrarás la lista con las pizzas más ricas que solo en PizzasTach podrás degustar" />
+	<link rel="stylesheet" type="text/css" href="css/Global.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css" media="all">
+	<link rel="stylesheet" type="text/css" href="css/fontello.css" media="all">
+	<link rel="stylesheet" type="text/css" href="css/menu.css" media="all">
+	<script src="js/jquery_1-11-10.js"></script>		
+	<script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+    	var visible = true;
+    </script>
+</head>
+<body>
+	<header>
+    	<figure class="Logo">
+				<a href="HomeUsuario.html">
+					<img alt="Logo" src="Images/Logo.png">
+				</a>
+		</figure>
+			<p class="Greeting">Bienvenido Sr. Carlos Santander</p>
+			<div class="BuyCar">
+				<a class="icon-carrito" href="carrito.html"></a>
+				<p>0,00 Bsf</p>
+			</div>
+			<a class="Login icon-perfil-1" href="#"></a>
+	</header>
+
+	<main>
+
+		<nav class="Menu">
+				<a class="btn orange" href="menu.html">Menú</a>
+				<a class="btn orange" href="Mispedidos.html">Mis Pedidos</a>
+				<a class="btn orange" href="Contacts.html">Contáctanos</a>
+			</nav>
+			<div class="btn orange icon-menu" href="#"></div>
+
+		<nav class="menu-user"> <!--Menu del usuario-->	
+
+			<ul class="submenu-user" id="submenu-user" hidden="true" >
+			<div class="calloutUp"></div>
+					<li ><a href="Micuenta.html" class="icon-perfil">Mi cuenta</a></li>
+					<li ><a href="Mispedidos.html" class="icon-lista-1">Compras realizadas</a></li>
+					<li ><a href="menu.html" class="icon-carrito">Menú</a></li>
+					<li ><a href="Contacts.html" class="icon-telefono">Contáctanos</a></li>
+					<li ><a href="index.html" class="icon-cerrar">Cerrar Sesión</a></li>
+			</ul>
+			
+		</nav>
+
+		<ul class="MenuPequenio" id="MenuPequenio" hidden="true" >
+			<div class="calloutUp"></div>
+			<li ><a href="menu.html" class="icon-perfil">Menú</a></li>
+			<li ><a href="Mispedidos.html" class="icon-lista-1">Mis Pedidos</a></li>
+			<li ><a href="Contacts.html" class="icon-carrito">Contáctanos</a></li>
+		</ul>
+
+		<section class="container">
+		    <h2 class="TituloMenu">Menú</h2>
+			
+			<ul id="carro">
+				
+				<li class="li1" id="pizzaEspecial1">
+					<img src="images/01.png" alt="Pizza Especial 1">
+
+					<div id="izquierda">
+					<h3>Pizza Especial 1</h3>
+					<span>Ingredientes: Queso, Cebolla, Pimenton, Salsa, Chorizo.</span>
+					<select id="tamaño">
+						<option value="Pequeña">Pequeña</option>
+						<option value="Mediana">Mediana</option>
+						<option value="Grande">Grande</option>
+					</select>
+					<input type="number" value="1" min="1" max="99" class="tan_num">
+					</div>
+					<div id="derecha">
+						<span id="precio"><strong>999,99 BsF</strong></span>
+						<a class="a1 btnEliminar">Agregar</a>
+					</div>
+				</li>
+
+				<li class="li2" id="pizzaHawaiana">
+					<img src="images/02.png" alt="Pizza Hawaiana">
+
+					<div id="izquierda">
+					<h3>Pizza Hawaiana</h3>
+					<span>Ingredientes: Queso, Cebolla, Pimenton, Salsa, Chorizo.</span>
+					<select id="tamaño">
+						<option value="Pequeña">Pequeña</option>
+						<option value="Mediana">Mediana</option>
+						<option value="Grande">Grande</option>
+					</select>
+					<input type="number" value="1" min="1" max="99" class="tan_num">
+					</div>
+					<div id="derecha">
+						<span id="precio"><strong>999,99 BsF</strong></span>
+						<a class="a2 btnEliminar">Agregar</a>
+					</div>
+				</li>
+
+				<li class="li3" id="pizzaMargarita">
+					
+					<img src="images/03.png" alt="Pizza Margarita">
+
+					<div id="izquierda">
+					<h3>Pizza Margarita</h3>
+					<span>Ingredientes: Queso, Cebolla, Pimenton, Salsa, Chorizo.</span>
+					<select id="tamaño">
+						<option value="Pequeña">Pequeña</option>
+						<option value="Mediana">Mediana</option>
+						<option value="Grande">Grande</option>
+					</select>
+					<input type="number" value="1" min="1" max="99" class="tan_num">
+					</div>
+					<div id="derecha">
+						<span id="precio"><strong>999,99 BsF</strong></span>
+						<a class="a3 btnEliminar">Agregar</a>
+					</div>
+				</li>
+
+				<li class="li4" id="pizzaRanchera">
+					<img src="images/04.png" alt="Pizza Ranchera">
+
+					<div id="izquierda">
+					<h3>Pizza Ranchera</h3>
+					<span>Ingredientes: Queso, Cebolla, Pimenton, Salsa, Chorizo.</span>
+					<select id="tamaño">
+						<option value="Pequeña">Pequeña</option>
+						<option value="Mediana">Mediana</option>
+						<option value="Grande">Grande</option>
+					</select>
+					<input type="number" value="1" min="1" max="99" class="tan_num">
+					</div>
+					<div id="derecha">
+						<span id="precio"><strong>999,99 BsF</strong></span>
+						<a class="a4 btnEliminar">Agregar</a>
+					</div>
+				</li>
+
+				<li class="li5" id="pizzaCarbonara">
+					<img src="images/05.png" alt="Pizza Carbonara">
+
+					<div id="izquierda">
+					<h3>Pizza Carbonara</h3>
+					<span>Ingredientes: Queso, Cebolla, Pimenton, Salsa, Chorizo.</span>
+					<select id="tamaño">
+						<option value="Pequeña">Pequeña</option>
+						<option value="Mediana">Mediana</option>
+						<option value="Grande">Grande</option>
+					</select>
+					<input type="number" value="1" min="1" max="99" class="tan_num">
+					</div>
+					<div id="derecha">
+						<span id="precio"><strong>999,99 BsF</strong></span>
+						<a class="a5 btnEliminar">Agregar</a>
+					</div>
+				</li>
+
+				<li class="li6" id="pizzaEstaciones">
+					<img src="images/06.png" alt="Pizza 4 Estaciones">
+
+					<div id="izquierda">
+					<h3>Pizza 4 Estaciones</h3>
+					<span>Ingredientes: Queso, Cebolla, Pimenton, Salsa, Chorizo.</span>
+					<select id="tamaño">
+						<option value="Pequeña">Pequeña</option>
+						<option value="Mediana">Mediana</option>
+						<option value="Grande">Grande</option>
+					</select>
+					<input type="number" value="1" min="1" max="99" class="tan_num">
+					</div>
+					<div id="derecha">
+						<span id="precio"><strong>999,99 BsF</strong></span>
+						<a class="a6 btnEliminar">Agregar</a>
+					</div>
+				</li>
+				
+			</ul>
+
+			<div id="subtotal">
+				<aside id="otra_tabla">
+					<div class="buscador">
+					<h3  class="h3">Tu Pizza Favorita</h3>
+							<div class="flexsearch">
+								<div class="flexsearch--wrapper">
+									<form class="flexsearch--form" action="#" method="post">
+										<div class="flexsearch--input-wrapper">
+											<input class="flexsearch--input" type="search" placeholder="Pizza Favorita">
+										</div>
+										<input class="flexsearch--submit" type="submit" value="&#10140;"/>
+									</form>
+								</div>
+							</div>
+					</div>
+					<h2 class="TituloBebidas">Bebidas</h2>
+					<ul id="carro2">
+						<li class="li21" id="bebida1">
+							<img src="images/coca.jpg" alt="Coca-Cola">
+							<div id="izquierda">
+							<h3>Coca Cola</h3>
+							<span>Para una noche inolvidable</span>							
+							<select id="tamaño">
+								<option value="1">1/2 Litros</option>
+								<option value="1">1 Litros</option>
+								<option value="1">2 Litros</option>
+							</select>
+							<input type="number" value="1" min="1" max="99" class="tan_num">
+							</div>
+							<div id="derecha">
+								<span id="precio"><strong>999,99 BsF</strong></span>
+								<a class="a21 btnEliminar">Agregar</a>
+							</div>
+						</li>
+
+						<li class="li22" id="bebida2">
+							<img src="images/frescolita.jpg" alt="Frescolita">
+							<div id="izquierda">
+							<h3>Frescolita</h3>
+							<span>Para una noche con tus hijo</span>
+							<select id="tamaño">
+								<option value="1">1/2 Litros</option>
+								<option value="1">1 Litros</option>
+								<option value="1">2 Litros</option>
+							</select>
+							<input type="number" value="1" min="1" max="99" class="tan_num">
+							</div>
+							<div id="derecha">
+								<span id="precio"><strong>999,99 BsF</strong></span>
+								<a class="a22 btnEliminar">Agregar</a>
+							</div>
+						</li>
+
+						<li class="li23" id="bebida3">
+							<img src="images/7up.jpg" alt="7Up">
+							<div id="izquierda">
+							<h3>7Up</h3>
+							<span>Para una noche refrescante</span>
+							<select id="tamaño">
+								<option value="1">1/2 Litros</option>
+								<option value="1">1 Litros</option>
+								<option value="1">2 Litros</option>
+							</select>
+							<input type="number" value="1" min="1" max="99" class="tan_num">
+							</div>
+							<div id="derecha">
+								<span id="precio"><strong>999,99 BsF</strong></span>
+								<a class="a23 btnEliminar">Agregar</a>
+							</div>
+						</li>
+
+						<li class="li24" id="bebida4">
+							<img src="images/pepsi.png" alt="Pepsi Cola">
+							<div id="izquierda">
+							<h3>Pepsi Cola</h3>
+							<span>Para una noche refrescante</span>
+							<select id="tamaño">
+								<option value="1">1/2 Litros</option>
+								<option value="1">1 Litros</option>
+								<option value="1">2 Litros</option>
+							</select>
+							<input type="number" value="1" min="1" max="99" class="tan_num">
+							</div>
+							<div id="derecha">
+								<span id="precio"><strong>999,99 BsF</strong></span>
+								<a class="a24 btnEliminar">Agregar</a>
+							</div>
+						</li>
+					</ul>
+				</aside>
+			</div>
+
+			<div id="caja_pedidos">		
+				<a class="btn2 green icon-carrito" onclick="location.href='carrito.html'">Continuar Compra</a>
+			</div>
+		</section>		
+	</main>
+
+	<footer>
+		<p class="Copyright">Todos los derechos reservados</p>
+			
+			<div class="Follow">
+				<p>Siguenos en: </p>
+				<a href="https://www.facebook.com/"><img class="zoom peque" alt="Facebook" src="Images/facebook.png"></a>
+				<a href="https://www.twitter.com"><img class="zoom peque"  alt="Twitter" src="Images/twitter.png"></a>
+				<a href="https://www.instagram.com/?hl=es"><img class="zoom peque"  alt="Instagram" src="Images/instagram.png"></a>
+			</div>
+	</footer>
+	<script src="js/script.js"></script>
+	<script type="text/javascript" src="js/efectos.js"></script>
+</body>
+</html>

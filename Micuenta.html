@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Pizzas Tach - Mi cuenta</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/Global.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css" media="all">
+	<link rel="stylesheet" type="text/css" href="css/fontello.css" media="all">
+	<link rel="stylesheet" type="text/css" href="css/micuenta.css" media="all">	
+	
+	
+	<script src="js/jquery_1-11-10.js"></script>		
+	<script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+    	var visible = true;
+ 
+		function activar()
+		{
+			if (document.getElementById('dir1').checked==false)
+			{
+				document.getElementById('ocultar').disabled=true;
+				document.getElementById('ocultar').style.backgroundColor = "rgba(166, 165, 167, 0.23)";
+				
+			}
+			if (document.getElementById('dir1').checked==true)
+			{
+				document.getElementById('ocultar').disabled=false;
+				document.getElementById('ocultar').style.backgroundColor = "rgb(47, 38, 48)";
+				
+			}
+		}
+
+ 
+</script>
+
+</head>
+<body>
+
+	<header>
+    	<figure class="Logo">
+				<a href="HomeUsuario.html">
+					<img alt="Logo" src="Images/Logo.png">
+				</a>
+		</figure>
+			<p class="Greeting">Bienvenido Sr. Carlos Santander</p>
+			<div class="BuyCar">
+				<a class="icon-carrito" href="carrito.html"></a>
+				<p>0,00 Bsf</p>
+			</div>
+			<a class="Login icon-perfil-1" href="#"></a>		
+	
+	</header>
+
+	<main>
+		<nav class="Menu">
+			<a class="btn orange" href="menu.html">Menú</a>
+			<a class="btn orange" href="Mispedidos.html">Mis Pedidos</a>
+			<a class="btn orange" href="Contacts.html">Contáctanos</a>
+		</nav>
+		<div class="btn orange icon-menu" href="#"></div>
+
+		<nav class="menu-user"> <!--Menu del usuario-->	
+
+			<ul class="submenu-user" id="submenu-user" hidden="true" >
+			<div class="calloutUp"></div>
+				<li ><a href="Micuenta.html" class="icon-perfil">Mi cuenta</a></li>
+				<li ><a href="Mispedidos.html" class="icon-lista-1">Compras realizadas</a></li>
+				<li ><a href="menu.html" class="icon-carrito">Menú</a></li>
+				<li ><a href="Contacts.html" class="icon-telefono">Contáctanos</a></li>
+				<li ><a href="index.html" class="icon-cerrar">Cerrar Sesión</a></li>
+			</ul>
+		
+	    </nav>
+
+		<ul class="MenuPequenio" id="MenuPequenio" hidden="true" >
+			<div class="calloutUp"></div>
+			<li ><a href="menu.html" class="icon-perfil">Menú</a></li>
+			<li ><a href="Mispedidos.html" class="icon-lista-1">Mis Pedidos</a></li>
+			<li ><a href="Contacts.html" class="icon-carrito">Contáctanos</a></li>
+		</ul>
+
+	<section class="container">
+     	<h2>Mi Cuenta</h2>
+		
+     	<form method="post" name="formEdit">
+     		
+     		
+ 			<div class="personales">
+ 			<h3>Datos Personales</h3>
+ 					<div id="f1"><div class="derecho"><label>Nombres:<span class="req">*</span></label></div>
+						<div class="izquierdo"><input type="text" required autofocus="true"/></div></div>
+					<div id="f2"><div class="derecho"><label>Apellidos:<span class="req">*</span></label></div>
+						<div class="izquierdo"><input type="text" required/></div></div>
+					<div id="f3"><div class="derecho"><label>Teléfono:<span class="req">*</span></label></div>
+						<div class="izquierdo"><input type="text" required/></div></div>
+					<div id="f4"><div class="derecho"><label>Correo:<span class="req">*</span></label></div>
+						<div class="izquierdo"><input type="text" required/></div></div>
+     		</div>
+     			</form>
+
+     		 
+     		<div class="direccion">
+
+     		 <span id="dir">
+     		 <input id="dir1" name="dire" type="checkbox"  value="1" onclick="activar()">
+     		 Cambiar dirección de envio
+     		 </span>
+
+     		 		<fieldset id="ocultar" disabled>
+		    <h3>Dirección</h3>
+
+					<div id="d1"><div class="derecho"><label>
+						Municipío:<span class="req">*</span>
+						
+					</label></div>
+						<div class="izquierdo"><select id="dis" required>
+							<option value="">---</option>
+							<option value="1">Cardenas</option>
+						</select></div>
+					</div>
+					<div id="d2">
+					<div class="derecho"><label>
+						Sector:<span class="req">*</span>
+					</label></div>
+						<div class="izquierdo"><select id="dis1" required >
+							<option value="">---</option>
+							<option value="1">Arjona</option>
+						</select></div>
+					</div>
+					<div id="d3"><div class="derecho"><label>Carrera/Avenida:<span class="req">*</span></label></div><div class="izquierdo"><input id="dis2" type="text" required ></div></div>
+					<div id="d4"><div class="derecho"><label>N° Casa/Urbanizacion:<span class="req">*</span></label></div><div class="izquierdo"><input id="dis3" type="text" required ></div></div>			
+		    </fieldset>
+		    </div>
+		   
+
+		
+		<button class="btn orange" id="bt_limpiar" type="reset">Limpiar</button>
+		<button class="btn orange" id="bt_guardar" type="submit">Guardar</button>
+		
+
+		
+	</section>
+
+	</main>
+
+	<footer>
+		<p class="Copyright">Todos los derechos reservados</p>
+			
+			<div class="Follow">
+				<p>Siguenos en: </p>
+				<a href="https://www.facebook.com/"><img class="zoom peque" alt="Facebook" src="Images/facebook.png"></a>
+				<a href="https://www.twitter.com"><img class="zoom peque"  alt="Twitter" src="Images/twitter.png"></a>
+				<a href="https://www.instagram.com/?hl=es"><img class="zoom peque"  alt="Instagram" src="Images/instagram.png"></a>
+			</div>
+	</footer>
+
+	<script src="js/script.js"></script>
+
+</body>
+</html>

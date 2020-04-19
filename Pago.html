@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Pago</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="css/Global.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/fontello.css" media="all">		
+	<link rel="stylesheet" type="text/css" href="css/pago.css" media="all">
+
+
+	<script src="js/jquery_1-11-10.js"></script>
+	<script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+    	var visible = true;
+	    
+		$(document).ready(function(){
+
+		   $("#chx").click( function(){
+		   if( $(this).is(':checked') ){
+		    $("#direccion").css("display", "block");
+			$("#cbm").html("Continuar con esta dirección");	
+			}
+		   else { 
+		   	$("#direccion").css("display", "none");
+		   	$("#cbm").html("Cambiar dirección de facturación - (Estas utilizando tu dirección de registro actual en este momento).");
+
+			}	
+		   });
+
+		});
+	</script>
+	
+</head>
+<body>
+	<header>
+    	<figure class="Logo">
+				<a href="HomeUsuario.html">
+					<img alt="Logo" src="Images/Logo.png">
+				</a>
+		</figure>
+			<p class="Greeting">Bienvenido Sr. Carlos Santander</p>
+			<div class="BuyCar">
+				<a class="icon-carrito"></a>
+				<p>0,00 Bsf</p>
+			</div>
+			<a class="Login icon-perfil-1" href="#"></a>		
+	
+	</header>
+	<main>
+		<nav class="Menu">
+				<a class="btn orange" href="menu.html">Menú</a>
+				<a class="btn orange" href="Mispedidos.html">Mis Pedidos</a>
+				<a class="btn orange" href="Contacts.html">Contáctanos</a>
+		</nav>
+		<div class="btn orange icon-menu" href="#"></div>
+
+		<nav class="menu-user"> <!--Menu del usuario-->	
+
+			<ul class="submenu-user" id="submenu-user" hidden="true" >
+				<div class="calloutUp"></div>
+				<li ><a href="Micuenta.html" class="icon-perfil">Mi cuenta</a></li>
+				<li ><a href="Mispedidos.html" class="icon-lista-1">Compras realizadas</a></li>
+				<li ><a href="menu.html" class="icon-carrito">Menú</a></li>
+				<li ><a href="Contactanos.html" class="icon-telefono">Contáctanos</a></li>
+				<li ><a href="index.html" class="icon-cerrar">Cerrar Sesión</a></li>
+			</ul>
+			
+		</nav>
+
+		<ul class="MenuPequenio" id="MenuPequenio" hidden="true" >
+			<div class="calloutUp"></div>
+			<li ><a href="menu.html" class="icon-perfil">Menú</a></li>
+			<li ><a href="Mispedidos.html" class="icon-lista-1">Mis Pedidos</a></li>
+			<li ><a href="Contacts.html" class="icon-carrito">Contáctanos</a></li>
+		</ul>
+
+	<section class="container">
+		<h1>Efectuar Pago</h1>
+		<h2>Datos de Tarjeta</h2>
+		<form method="post" name="formPago">
+		<div class="personales">
+ 			
+ 					<div id="f1"><div class="derecho"><label>N° de Tarjeta:<span class="req">*</span></label></div>
+						<div class="izquierdo"><input type="text" minlength="23" maxlength="23" required autofocus="true"/></div></div>
+					<div id="f2"><div class="derecho"><label>Nombre del titular:<span class="req">*</span></label></div>
+						<div class="izquierdo"><input type="text" required/></div></div>
+					<div id="f3"><div class="derecho"><label>Código de seguridad(CVV):<span class="req">*</span></label></div>
+						<div class="izquierdo"><input type="text" required/></div></div>
+					<div id="f4"><div class="derecho"><label>Fecha de Vencimiento:<span class="req">*</span></label></div>
+						<div class="izquierdo"><input type="month" required/></div></div>
+					
+     	</div>
+
+     	
+
+     	<h2>Dirección de Facturación</h2>
+		<div class="direccion" id="direccion">
+		
+			<div id="d1"><div class="derecho"><label>
+						Municipío:<span class="req">*</span>
+						
+					</label></div>
+						<div class="izquierdo"><select required>
+							<option value="">---</option>
+							<option value="1">Cardenas</option>
+						</select></div>
+					</div>
+					<div id="d2">
+					<div class="derecho"><label>
+						Sector:<span class="req">*</span>
+					</label></div>
+						<div class="izquierdo"><select required>
+							<option value="">---</option>
+							<option value="1">Arjona</option>
+						</select></div>
+					</div>
+					<div id="d3"><div class="derecho"><label>Carrera/Avenida:<span class="req">*</span></label></div><div class="izquierdo"><input type="text" required></div></div>
+					<div id="d4"><div class="derecho"><label>N° Casa/Urbanizacion:<span class="req">*</span></label></div><div class="izquierdo"><input type="text" required></div></div>
+		</div>
+		
+		<div id="dire"><input id="chx" name="chx" type="checkbox" value="1" /><label id="cbm">Cambiar dirección de facturación - (Estas utilizando tu dirección de registro actual en este momento).</label></div>
+		<button id="bt1" class="aceptar aceptar-block btn green" onclick="location.href='Factura.html#modal'">Pagar</button>
+		</form>
+	</section>
+
+</main>
+<footer>
+		<p class="Copyright">Todos los Derechos Reservados</p>
+			
+			<div class="Follow">
+				<p>Siguenos en: </p>
+				<a href="https://www.facebook.com/"><img class="zoom peque" alt="Facebook" src="Images/facebook.png"></a>
+				<a href="https://www.twitter.com"><img class="zoom peque"  alt="Twitter" src="Images/twitter.png"></a>
+				<a href="https://www.instagram.com/?hl=es"><img class="zoom peque"  alt="Instagram" src="Images/instagram.png"></a>
+			</div>
+	</footer>
+</body>
+
+
+
+
+</html>

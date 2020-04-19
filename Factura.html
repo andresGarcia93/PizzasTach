@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Pizzas Tach - Factura</title>
+	<meta charset="UTF-8">	
+	<link rel="stylesheet" type="text/css" href="css/Global.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/fontello.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/factura.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/fac_print.css" media="print">		
+	
+	
+	<script src="js/jquery_1-11-10.js"></script>		
+	<script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+    	var visible = true;
+    </script>
+
+</head>
+<body>
+
+	<header>
+    	<figure class="Logo">
+				<a href="HomeUsuario.html">
+					<img alt="Logo" src="Images/Logo.png">
+				</a>
+		</figure>
+			<p class="Greeting">Bienvenido Sr. Carlos Santander</p>
+			<div class="BuyCar">
+				<a class="icon-carrito" href="carrito.html"></a>
+				<p>0,00 Bsf</p>
+			</div>
+			<a class="Login icon-perfil-1" href="#"></a>		
+	
+	</header>
+
+	<div id="modal" class="modalDialog">
+		<div>
+			<a href="#close" title="Close" class="close icon-cerrar"></a>
+				 
+				<div class="modal">  
+			    <div><h3>Compra Exitosa</h3></div>
+			    <div><p class="texto">Gracias por hacer tu compra. Tu pedido llegará lo mas pronto posible.</p></div>
+
+			    <button class="aceptar aceptar-block green" onclick="location.href='#close'">Aceptar</button>
+			    </div>       
+			    
+		</div>
+    </div>
+
+	<main>
+		<nav class="Menu">
+			<a class="btn orange" href="menu.html">Menú</a>
+			<a class="btn orange" href="Mispedidos.html">Mis Pedidos</a>
+			<a class="btn orange" href="Contacts.html">Contáctanos</a>
+		</nav>
+		<div class="btn orange icon-menu" href="#"></div>
+
+		<nav class="menu-user"> <!--Menu del usuario-->	
+
+			<ul class="submenu-user" id="submenu-user" hidden="true" >
+			<div class="calloutUp"></div>
+				<li ><a href="Micuenta.html" class="icon-perfil">Mi cuenta</a></li>
+				<li ><a href="Mispedidos.html" class="icon-lista-1">Compras realizadas</a></li>
+				<li ><a href="menu.html" class="icon-carrito">Menú</a></li>
+				<li ><a href="Contacts.html" class="icon-telefono">Contáctanos</a></li>
+				<li ><a href="index.html" class="icon-cerrar">Cerrar Sesión</a></li>
+			</ul>
+		
+	    </nav>
+
+		<ul class="MenuPequenio" id="MenuPequenio" hidden="true" >
+			<div class="calloutUp"></div>
+			<li ><a href="menu.html" class="icon-perfil">Menú</a></li>
+			<li ><a href="Mispedidos.html" class="icon-lista-1">Mis Pedidos</a></li>
+			<li ><a href="Contacts.html" class="icon-carrito">Contáctanos</a></li>
+		</ul>
+
+	<section class="container">
+     	<h2>Factura de Compra</h2>
+		
+     	<div class="encabezado">
+     	<div class="fechas">     		
+     		<p>Fecha de Emisión: 08/12/2016</p>
+     		<p>Hora del Sistema: 9:00am</p>     		
+     	</div>
+
+     	<div class="seriales">
+     		<div class="logo"><img alf="Logo de PizzasTach" src="Images/Logo_fac.png"><span>PizzasTach</span></div>
+     		<p>RIF: V-23456789-9</p>
+     		<p>Serial de Facturación: CVZTY00001</p>
+     		<p>Folio: A-00001</p>
+     	</div>
+     	</div>
+     	
+
+		<table>
+			<caption class="titulo_tabla">
+	     		<p>Cliente: Sr. Carlos Santander</p>
+	     		<hr noshade="noshade" size="1" width="100%" />
+			</caption>
+
+			<thead>
+				<tr>
+					<th><p>Cantidad</p></th>
+					<th><p>Producto</p></th>
+					<th><p>Descripción</p></th>
+					<th><p>Precio Unitario</p></th>										
+			    </tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><p>1</p></td>
+					<td><p>Pizza Margarita</p></td>
+					<td><p>Grande</p></td>
+					<td><p>39,16 Bsf</p></td>
+				</tr>
+				<tr>
+					<td><p>2</p></td>
+					<td><p>Coca Cola</p></td>
+					<td><p>2 Litros</p></td>
+					<td><p>9,00 Bsf</p></td>
+				</tr>				
+			</tbody>
+			
+		</table>
+		<hr noshade="noshade" size="1" width="90%" class="linea_glo" />
+		<ul class="totales">
+			<li>
+			   <div id="der">
+			   <span>Subtotal:</span>
+			   </div>
+			   <div id="iz">
+			   <span >88,32 Bsf</span>
+			   </div>
+			</li>
+		    <hr noshade="noshade" size="1" width="100%" />
+		    <li>
+			   <span id="der">IVA (12%):</span>
+			   <span id="iz">11.67 Bsf</span>
+			</li>
+			<hr noshade="noshade" size="1" width="100%" />
+			<li>
+			   <span id="der">Total:</span>
+			   <span id="iz">99,99 Bsf</span>
+			</li>			
+			<hr noshade="noshade" size="1" width="100%" />
+		</ul>	
+
+		<div class="modos">
+			<p>Modo de Cancelación de Compra: Tarjeta de Crédito</p>
+			<p>Número de Transacción: 1223720</p>
+		</div>
+
+
+		<button class="btn green" id="bt_guardar" onclick="location.href='menu.html'">Volver a Menú</button>
+
+		<button class="btn orange" id="bt_guardar" onclick="window.print();">Imprmir Factura</button>
+		
+
+		
+	</section>
+
+	<section class="container2">
+		
+		<p >La Reproducción no autorizada de este comprobante constituye un delito en los términos de las disposiciones fiscales.</p>
+		<p>Vigencia a partir del 08 de Diciembre del 2016.</p>
+		
+	</section>
+
+	</main>
+
+	<footer>
+		<p class="Copyright">Todos los derechos reservados</p>
+			
+			<div class="Follow">
+				<p>Siguenos en: </p>
+				<a href="https://www.facebook.com/"><img class="zoom peque" alt="Facebook" src="Images/facebook.png"></a>
+				<a href="https://www.twitter.com"><img class="zoom peque"  alt="Twitter" src="Images/twitter.png"></a>
+				<a href="https://www.instagram.com/?hl=es"><img class="zoom peque"  alt="Instagram" src="Images/instagram.png"></a>
+			</div>
+	</footer>
+
+	<script src="js/script.js"></script>
+
+</body>
+</html>

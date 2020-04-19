@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Pizzas Tach - HomeUsuario</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/Global.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css" media="all">
+	<link rel="stylesheet" type="text/css" href="css/fontello.css" media="all">
+	<link rel="stylesheet" type="text/css" href="css/homeuser.css" media="all">
+	<link rel="stylesheet" type="text/css" href="css/index.css" media="all">
+
+	<script src="js/ism-2.2.min.js"></script>
+	<script src="js/jquery_1-11-10.js"></script>		
+	<script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+    	var visible = true;
+    
+    	
+		 var posicion = 0;
+		 var imagenes = new Array();
+		 $(document).ready(function() {
+		   
+		   var numeroImatges = 6;
+		   if(numeroImatges<=3){
+		       $('.derecha_flecha').css('display','none');
+		    $('.izquierda_flecha').css('display','none');
+		   }
+
+		     $('.izquierda_flecha').click(function(){     
+		         if(posicion>0){
+		            posicion = posicion-1;
+		        }else{
+		            posicion = numeroImatges-3;
+		        }
+		        $(".carrusel").animate({"left": -($('#product_'+posicion).position().left)}, 600);
+		        return false;
+		     });
+
+		     $('.derecha_flecha').click(function(){
+		        if(numeroImatges>posicion+3){
+		            posicion = posicion+1;
+		        }else{
+		            posicion = 0;
+		        }
+		        $(".carrusel").animate({"left": -($('#product_'+posicion).position().left)}, 600);
+		        return false;
+		     });
+
+		 });
+
+		var visible = true;
+
+		function getParameterByName(name) {
+	    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+	    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+	    results = regex.exec(location.search);
+	    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		
+		}
+
+		var usuario = getParameterByName('usuario');
+
+
+	</script>
+</head>
+<body>
+
+	<header>
+    	<figure class="Logo">
+				<a href="HomeUsuario.html">
+					<img alt="Logo" src="Images/Logo.png">
+				</a>
+		</figure>
+			<p id="bienvenido" class="Greeting">Bienvenido Sr. Carlos Santander</p><!--<script type="text/javascript">document.write(usuario);</script> </p>-->
+			<div class="BuyCar">
+				<a class="icon-carrito" href="carrito.html"></a>
+				<p>0,00 Bsf</p>
+			</div>
+			<a class="Login icon-perfil-1" href="#"></a>		
+	
+	</header>
+
+	<main>
+		<nav class="Menu">
+				<a class="btn orange" href="menu.html">Menú</a>
+				<a class="btn orange" href="Mispedidos.html">Mis Pedidos</a>
+				<a class="btn orange" href="Contacts.html">Contáctanos</a>
+			</nav>
+			<div class="btn orange icon-menu" href="#"></div>
+
+		<nav class="menu-user"> <!--Menu del usuario-->	
+
+			<ul class="submenu-user" id="submenu-user" hidden="true" >
+			<div class="calloutUp"></div>
+				<li ><a href="Micuenta.html" class="icon-perfil">Mi cuenta</a></li>
+				<li ><a href="Mispedidos.html" class="icon-lista-1">Compras realizadas</a></li>
+				<li ><a href="menu.html" class="icon-carrito">Menú</a></li>
+				<li ><a href="Contacts.html" class="icon-telefono">Contáctanos</a></li>
+				<li ><a href="index.html" class="icon-cerrar">Cerrar Sesión</a></li>
+			</ul>
+			
+		</nav>
+
+		<ul class="MenuPequenio" id="MenuPequenio" hidden="true" >
+			<div class="calloutUp"></div>
+			<li ><a href="menu.html" class="icon-perfil">Menú</a></li>
+			<li ><a href="Mispedidos.html" class="icon-lista-1">Mis Pedidos</a></li>
+			<li ><a href="Contacts.html" class="icon-carrito">Contáctanos</a></li>
+		</ul>
+
+		<section class="slide">
+				<div class="ism-slider" data-transition_type="zoom" data-play_type="loop" data-image_fx="zoomrotate" id="my-slider">
+					  <ol>
+					    <li>
+					      <img src="images/img1.jpg">
+					      <div class="ism-caption ism-caption-0" data-delay='500'><div><h3 onclick="location.href='carrito.html'">¡Ordenar Ya!</h3></div></div>
+					    </li>
+					    <li>
+					      <img src="images/img2.jpg">
+					      <div class="ism-caption ism-caption-0" data-delay='500'><div><h3 onclick="location.href='carrito.html'">¡Pedir Ahora!</h3></div></div>
+					    </li>
+					    <li>
+					      <img src="images/img3.jpg">
+					      <div class="ism-caption ism-caption-0" data-delay='500'><div><h3 onclick="location.href='carrito.html'">¡Ordenar Ya!</h3></div></div>
+					    </li>
+					  </ol>
+				</div>
+		</section>
+
+
+		<section class="container">
+			
+			<div class="asides">
+				<!--Parte de abajo izquierda-->
+				<section class="caja_combos aside1">
+		   		    <article >
+					  	<p>Las Mejores Pizzas Solo en San Cristóbal.<br><br>Combos Populares</p>
+					  	
+					  	<hr noshade="noshade" size="1" width="75%" />
+
+
+						<div id="carrusel">
+						    <a href="#carrusel" class="izquierda_flecha icon-left"></a>
+						    <a href="#carrusel" class="derecha_flecha icon-right"></a>
+						    <div class="carrusel">
+						        <div class="product" id="product_0">
+							            <img class="img_carrusel" src="images/03.png" alt="Imagen 1" onclick="location.href='carrito.html'" />
+							            <span class="text">Por encima de las rebanadas picantes del pepperoni, lleva una capa de queso derretido a la que nadie puede negarse.</span>
+							        </div>
+							        <div class="product" id="product_1">
+							             <img class="img_carrusel" src="images/02.png" alt="Imagen 2" onclick="location.href='carrito.html'"/>
+							            <span>Se trata de una pizza dividida en 4 secciones, cada una con ingredientes propios de cada estación del año.</span>
+							        </div>
+							        <div class="product" id="product_2">
+							            <img class="img_carrusel" src="images/01.png" alt="Imagen 3" onclick="location.href='carrito.html'"/>
+							            <span>La auténtica pizza Italiana con el rojo de los tomates, el verde de la albahaca y el blanco de la muzzarella.</span>
+							        </div>
+							        <div class="product" id="product_3">
+							            <img class="img_carrusel" src="images/04.png" alt="Imagen 4" onclick="location.href='carrito.html'"/>
+							            <span>Aprende cómo hacer este gusto con jamón y palmitos y deleita a todos tus amigos.</span>
+							        </div>
+							        <div class="product" id="product_4">
+							            <img class="img_carrusel" src="images/05.png" alt="Imagen 5" onclick="location.href='carrito.html'"/>
+							            <span>Estamos seguros que a muchos les encantará este sabor con pollo y salsa barbacoa.</span>
+							        </div>
+							        <div class="product" id="product_5">
+							            <img class="img_carrusel" src="images/06.png" alt="Imagen 6" onclick="location.href='carrito.html'"/>
+							            <span>Y si quieres darle un toque de elegancia a la noche, prueba esta pizza con salmón ahumado que seguro a todos les gustará.</span>
+							        </div>
+						    </div>
+						</div>
+
+						<hr noshade="noshade" size="1" width="75%" /><br/>
+
+						
+						<button class="icon-vaso-2 btn green" style="color: #000;" onclick="location.href='menu.html' " > Bebidas</button> 
+						
+					</article>	  
+				</section>
+
+			  <!--Parte de abajo derecha-->
+				<section class="aside2">	  	
+					<h2>Top Pedidos</h2>		  	
+					  	<div class="top_pedidos">
+							<ul >
+								<li>
+									<img src="images/01.png" alt="Pizza Especial 1">
+									<div class="derecha">
+									<span id="precio" href="">Pizza Margarita</span>
+									</div>
+									<div class="izquierda">
+									<span id="precio">9999,99 Bsf</span><span class="icon-ok-1 mas-zoom"></span>
+									</div>
+								</li>
+								<li>
+									<img src="images/03.png" alt="Pizza Especial 1">
+									<div class="derecha">
+									<span id="precio" href="">Pizza Hawaiana</span>
+									</div>
+									<div class="izquierda">
+									<span id="precio">9999,99 Bsf</span><span class="icon-ok-1 mas-zoom"></span>
+									</div>
+								</li>
+								<li>
+									<img src="images/06.png" alt="Pizza Especial 1">
+									<div class="derecha">
+									<span id="precio" href="">Pizza Napolitana</span>
+									</div>
+									<div class="izquierda">
+									<span id="precio">9999,99 Bsf</span><strong class="icon-ok-1 mas-zoom"></strong>
+									</div>
+								</li>
+							</ul>						
+						</div>
+				</section>
+			</div>
+		</section>
+</main>
+	<footer>
+		<p class="Copyright">Todos los derechos reservados</p>
+			
+			<div class="Follow">
+				<p>Siguenos en: </p>
+				<a href="https://www.facebook.com/"><img class="zoom peque" alt="Facebook" src="Images/facebook.png"></a>
+				<a href="https://www.twitter.com"><img class="zoom peque"  alt="Twitter" src="Images/twitter.png"></a>
+				<a href="https://www.instagram.com/?hl=es"><img class="zoom peque"  alt="Instagram" src="Images/instagram.png"></a>
+			</div>
+	</footer>
+
+	<script src="js/script.js"></script>
+
+</body>
+</html>

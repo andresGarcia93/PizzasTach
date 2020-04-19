@@ -1,0 +1,246 @@
+<!DOCTYPE Html>
+<html lang="es">
+	<head>
+		<title>
+			Pizzas Tach - Carro de compras
+		</title>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">	    
+		<link rel="stylesheet" type="text/css" href="css/Global.css">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="css/fontello.css" media="all">
+		<link rel="stylesheet" type="text/css" href="css/carrito.css">
+		<script src="js/jquery_1-11-10.js"></script>
+	    <script src="js/jquery.js"></script>
+	    <script src="js/script.js"></script>
+
+		<script type="text/javascript">
+
+			var visible = true;
+		
+		    $(document).ready(function(){
+
+			   $("#otra").click( function(){
+			   if( $(this).is(':checked') ){
+			    $("#otra_dir").css("display", "block");
+				}
+			   });
+
+			   $("#actual").click( function(){
+			   if( $(this).is(':checked') ){
+			    $("#otra_dir").css("display", "none");
+				}
+			   });
+
+			});
+	    </script>
+	    <script src="js/jquery.js"></script>
+	</head>
+	<body>
+		<header>
+			<figure class="Logo">
+				<a href="HomeUsuario.html">
+					<img alt="Logo" src="Images/Logo.png">
+				</a>
+		</figure>
+			<p class="Greeting">Bienvenido Sr. Carlos Santander</p>
+			<div class="BuyCar">
+				<a class="icon-carrito" href="pago.html"></a>
+				<p>0,00 Bsf</p>
+			</div>
+			<a class="Login icon-perfil-1" href="#"></a>
+
+		</header>
+		
+		<main>
+			<nav class="Menu">
+				<a class="btn orange" href="menu.html">Menú</a>
+				<a class="btn orange" href="Mispedidos.html">Mis Pedidos</a>
+				<a class="btn orange" href="Contacts.html">Contáctanos</a>
+			</nav>
+			<div class="btn orange icon-menu" href="#"></div>
+
+			<nav class="menu-user"> <!--Menu del usuario-->	
+
+						<ul class="submenu-user" id="submenu-user" hidden="true" >
+						<div class="calloutUp"></div>
+							<li ><a href="Micuenta.html" class="icon-perfil">Mi cuenta</a></li>
+							<li ><a href="Mispedidos.html" class="icon-lista-1">Compras realizadas</a></li>
+							<li ><a href="menu.html" class="icon-carrito">Menú</a></li>
+							<li ><a href="Contacts.html" class="icon-telefono">Contáctanos</a></li>
+							<li ><a href="index.html" class="icon-cerrar">Cerrar Sesión</a></li>
+						</ul>
+				
+			</nav>
+
+			<ul class="MenuPequenio" id="MenuPequenio" hidden="true" >
+				<div class="calloutUp"></div>
+				<li ><a href="menu.html" class="icon-perfil">Menú</a></li>
+				<li ><a href="Mispedidos.html" class="icon-lista-1">Mis Pedidos</a></li>
+				<li ><a href="Contacts.html" class="icon-carrito">Contáctanos</a></li>
+			</ul>
+
+			<section class="container">
+				<h2>Carro de Compra</h2>
+
+				<ul id="carro">
+					
+						<li>
+							<img src="images/02.png" alt="Combo de Pizza">
+
+							<div id="izquierda">
+							<h3>Combo Pizza 2</h3>
+							<span>Ingredientes: Queso, Cebolla, Pimenton, Salsa, Chorizo.</span>
+							<select id="tamaño">
+								<option value="Pequeña">Pequeña</option>
+								<option value="Mediana">Mediana</option>
+								<option value="Grande">Grande</option>
+							</select>
+							<input type="number" value="1" min="1" max="99" class="tan_num">
+							</div>
+							<div id="derecha">
+								<span id="precio"><strong>999,99 BsF</strong></span>
+								<a class="btnEliminar">Eliminar</a>
+							</div>
+						</li>
+						<li>
+							<img src="images/03.png" alt="Pizza Especial 1">
+
+							<div id="izquierda">
+							<h3>Pizza con Champiñones</h3>
+							<span>Ingredientes: Queso, Cebolla, Pimenton, Salsa, Chorizo.</span>
+							<select id="tamaño">
+								<option value="Pequeña">Pequeña</option>
+								<option value="Mediana">Mediana</option>
+								<option value="Grande">Grande</option>
+							</select>
+							<input type="number" value="1" min="1" max="99" class="tan_num">
+							</div>
+							<div id="derecha">
+								<span id="precio"><strong>999,99 BsF</strong></span>
+								<a class="btnEliminar">Eliminar</a>
+							</div>
+						</li>
+						<li>
+							<img src="images/04.png" alt="Pizza Especial 1">
+
+							<div id="izquierda">
+							<h3>Pizza de Salami</h3>
+							<span>Ingredientes: Queso, Cebolla, Pimenton, Salsa, Chorizo.</span>
+							<select id="tamaño">
+								<option value="Pequeña">Pequeña</option>
+								<option value="Mediana">Mediana</option>
+								<option value="Grande">Grande</option>
+							</select>
+							<input type="number" value="1" min="1" max="99" class="tan_num">
+							</div>
+							<div id="derecha">
+								<span id="precio"><strong>999,99 BsF</strong></span>
+								<a class="btnEliminar">Eliminar</a>
+							</div>
+						</li>
+						<li>
+							<img src="images/img-pizza.jpg" alt="Pizza Especial 1">
+
+							<div id="izquierda">
+							<h3>Pizza con Queso</h3>
+							<span>Ingredientes: Queso, Cebolla, Pimenton, Salsa, Chorizo.</span>
+							<select id="tamaño">
+								<option value="Pequeña">Pequeña</option>
+								<option value="Mediana">Mediana</option>
+								<option value="Grande">Grande</option>
+							</select>
+							<input type="number" value="1" min="1" max="99" class="tan_num">
+							</div>
+							<div id="derecha">
+								<span id="precio"><strong>999,99 BsF</strong></span>
+								<a class="btnEliminar">Eliminar</a>
+							</div>
+						</li>
+						<li>
+							<img src="images/coca.jpg" alt="Pizza Especial 1">
+
+							<div id="izquierda">
+							<h3>Coca Cola</h3>
+							<span>Ingredientes: Queso, Cebolla, Pimenton, Salsa, Chorizo.</span>
+							<select id="tamaño">
+								<option value="Pequeña">1 Litro</option>
+								<option value="Mediana">1,5 Litros</option>
+								<option value="Grande">2 Litros</option>
+							</select>
+							<input type="number" value="1" min="1" max="99" class="tan_num">
+							</div>
+							<div id="derecha">
+								<span id="precio"><strong>999,99 BsF</strong></span>
+								<a class="btnEliminar">Eliminar</a>
+							</div>
+						</li>				
+				</ul>	
+
+				<div id="subtotal">
+						<h3>Subtotal</h3>
+						<span id="precio"><strong>999,99 BsF</strong></span>					
+					
+						<form method="post" name="formPago">
+							<span id="inf1" for="info">Forma de pago</span>
+							<select  required>
+								<option value="">---</option>
+								<option value="Credito">Crédito</option>
+								<option value="Debito">Débito</option>								
+							</select><br><br>
+							
+							<div class="caja_direcciones">
+							<input type="radio" name="dir1" value="" checked="" id="actual"><span class="caja_dir">Elejir mi dirección de registro</span><br>
+							<input type="radio" name="dir1" value="" id="otra"><span class="caja_dir">Otra dirección de envío</span>
+							</div>
+							
+							<div class="container2" id="otra_dir" style="display: none;">
+								<div id="d1"><div class="derecho"><label>
+								Municipío:<span class="req">*</span>
+								
+							</label></div>
+								<div class="izquierdo"><select required>
+									<option value="">---</option>
+									<option value="1">Cardenas</option>
+								</select></div>
+							</div>
+							<div id="d2">
+							<div class="derecho"><label>
+								Sector:<span class="req">*</span>
+							</label></div>
+								<div class="izquierdo"><select required>
+									<option value="">---</option>
+									<option value="1">Arjona</option>
+								</select></div>
+							</div>
+							<div id="d3"><div class="derecho"><label>Carrera/Avenida:<span class="req">*</span></label></div><div class="izquierdo"><input type="text" required></div></div>
+							<div id="d4"><div class="derecho"><label>N° Casa/Urbanizacion:<span class="req">*</span></label></div><div class="izquierdo"><input type="text" required></div></div>
+							</div>
+							
+							<div id="caja_boton">	
+							<a class="btn green" onclick="location.href='pago.html'">Realizar Pedido</a>
+							</div>
+						</form>	
+				    
+
+				</div>
+				<div id="caja_pedidos">		
+				<a class="btn orange" id="mas" onclick="location.href='menu.html'">Seguir Comprando</a>
+				<a class="btn orange" id="clr" href="#">Limpiar Carro</a>
+				</div>
+
+			</section>				
+		</main>
+		<footer>
+			<p class="Copyright">Todos los derechos reservados</p>
+			
+			<div class="Follow">
+				<p>Siguenos en: </p>
+				<a href="https://www.facebook.com/"><img class="zoom" alt="Facebook" src="Images/facebook.png"></a>
+				<a href="https://www.twitter.com"><img class="zoom"  alt="Twitter" src="Images/twitter.png"></a>
+				<a href="https://www.instagram.com/?hl=es"><img class="zoom"  alt="Instagram" src="Images/instagram.png"></a>
+			</div>
+		</footer>
+		<script src="js/script.js"></script>
+	</body>
+</html>
